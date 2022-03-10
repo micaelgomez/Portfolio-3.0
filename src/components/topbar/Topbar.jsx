@@ -1,6 +1,5 @@
 import React from "react";
 import "./topbar.scss";
-import Person from "@mui/icons-material/Person";
 import MailIcon from "@mui/icons-material/Mail";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
@@ -17,7 +16,7 @@ export default function Topbar({menuOpen,setMenuOpen}) {
 
           <div className="itemContainer">
             <LinkedInIcon className="icon" />
-            <a  href="https://www.linkedin.com/in/micael-alessandro-gomez-fullstack/" target="_blank">LinkedIn</a>
+            <a  href="https://www.linkedin.com/in/micael-alessandro-gomez-fullstack/" target="_blank" rel="noreferrer">LinkedIn</a>
           </div>
 
           <div className="itemContainer">
@@ -25,6 +24,7 @@ export default function Topbar({menuOpen,setMenuOpen}) {
             <a
             className="mx-2"
             target="_blank"
+            rel="noreferrer"
             href="https://mail.google.com/mail/?view=cm&source=mailto&to=mickii.gomez.mg@gmail.com"
           >
             Email
