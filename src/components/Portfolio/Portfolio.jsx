@@ -1,12 +1,13 @@
 import React from "react";
 import "./portfolio.scss";
 import PortfolioList from "../PortfolioList/portfolioList";
-
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import PortofolioCard from "../PortfolioCard/PortofolioCard";
+import { featured, reactPortfolio, reactRedux, responsive } from "../../data";
 
 export default function Portfolio() {
   const [selected, setSelected] = useState("featured");
+  const [data, setData] = useState([]);
 
   const list = [
     {
@@ -14,43 +15,62 @@ export default function Portfolio() {
       title: "Featured",
     },
     {
-      id: "web",
-      title: "Web App",
+      id: "react",
+      title: "React",
     },
     {
-      id: "mobile",
-      title: "Mobile App",
+      id: "react-redux-node",
+      title: "React/Redux & Node.js",
     },
     {
-      id: "design",
-      title: "Design",
-    },
-    {
-      id: "branding",
-      title: "Branding",
+      id: "responsive",
+      title: " Css Resposive",
     },
   ];
 
+  useEffect(() => {
+    switch (selected) {
+      case "featured":
+        setData(featured);
+        break;
+      case "react":
+        setData(reactPortfolio);
+        break;
+      case "react-redux-node":
+        setData(reactRedux);
+        break;
+      case "responsive":
+        setData(responsive);
+        break;
+      default:
+        setData(featured);
+    }
+  }, [selected]);
+
   return (
     <div className="portfolio" id="portfolio">
-        <h1>Portfolio</h1>
-          <ul>
-            {list.map((item) => (
-              <PortfolioList
-                id={item.id}
-                title={item.title}
-                active={selected === item.id}
-                setSelected={setSelected}
-              />
-            ))}
-          </ul>
+      <h1>Portfolio</h1>
+      <ul>
+        {list.map((item) => (
+          <PortfolioList
+            id={item.id}
+            title={item.title}
+            active={selected === item.id}
+            setSelected={setSelected}
+          />
+        ))}
+      </ul>
       <div className="container">
-         <PortofolioCard />
-         <PortofolioCard />
-         <PortofolioCard />
-         <PortofolioCard />
-         
-      </div>   
+        {data.map((d) => (
+          <PortofolioCard
+            id={d.id}
+            title={d.title}
+            img={d.img}
+            page={d.page}
+            code={d.code}
+          />
+        ))}
+      </div>
     </div>
   );
 }

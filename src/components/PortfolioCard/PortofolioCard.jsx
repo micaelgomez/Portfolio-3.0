@@ -2,19 +2,19 @@ import React from 'react'
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import './PortfolioCard.scss'
+import {featured} from '../../data'
 
-export default function PortofolioCard() {
+export default function PortofolioCard({id,title,img,page,code}) {
   return (
-    <div className="item">
-    <img src="assets/descarga.jpg" alt="foto" />
+    <div id={id} className="item">
+    <img src={img} alt="foto" />
         <div className="abs">
-            <h3>Banking App</h3>
+            <h3>{title}</h3>
               <div className="abs-cont">
-                  
-                  <a href="#" className="btn">
+                  <a href={page} target="_blank" rel="noreferrer"  className="btn">
                   <FavoriteIcon />
                   Link</a>
-                  <a href="#" className="btn">
+                  <a href={code} target="_blank" rel="noreferrer"  className="btn">
                   <GitHubIcon />
                   Code</a>
               </div>
