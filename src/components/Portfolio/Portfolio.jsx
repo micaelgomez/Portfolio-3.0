@@ -1,7 +1,9 @@
 import React from "react";
 import "./portfolio.scss";
 import PortfolioList from "../PortfolioList/portfolioList";
+
 import { useState } from "react";
+import PortofolioCard from "../PortfolioCard/PortofolioCard";
 
 export default function Portfolio() {
   const [selected, setSelected] = useState("featured");
@@ -31,39 +33,24 @@ export default function Portfolio() {
 
   return (
     <div className="portfolio" id="portfolio">
-      <h1>Portfolio</h1>
-      <ul>
-        {list.map((item) => (
-          <PortfolioList
-            id={item.id}
-            title={item.title}
-            active={selected === item.id}
-            setSelected={setSelected}
-          />
-        ))}
-      </ul>
+        <h1>Portfolio</h1>
+          <ul>
+            {list.map((item) => (
+              <PortfolioList
+                id={item.id}
+                title={item.title}
+                active={selected === item.id}
+                setSelected={setSelected}
+              />
+            ))}
+          </ul>
       <div className="container">
-        <div className="item">
-          <img src="assets/descarga.jpg" alt="foto" />
-          <h3>Banking App</h3>
-        </div>
-        <div className="item">
-          <img src="assets/descarga.jpg" alt="foto" />
-          <h3>Banking App</h3>
-        </div>
-        <div className="item">
-          <img src="assets/descarga.jpg" alt="foto" />
-          <h3>Banking App</h3>
-        </div>
-        <div className="item">
-          <img src="assets/descarga.jpg" alt="foto" />
-          <h3>Banking App</h3>
-        </div>
-        <div className="item">
-          <img src="assets/descarga.jpg" alt="foto" />
-          <h3>Banking App</h3>
-        </div>
-      </div>
+         <PortofolioCard />
+         <PortofolioCard />
+         <PortofolioCard />
+         <PortofolioCard />
+         
+      </div>   
     </div>
   );
 }

@@ -1,3 +1,87 @@
-.contact{
-    background: lightblue;
+@import "../../global.scss";
+
+.contact {
+  background: white;
+  display: flex;
+
+
+  @include mobile {
+    flex-direction: column;
+    
+    .left {
+      align-self: center; 
+    }
+
+  }
+
+  .left {
+    flex: 1;
+    overflow: hidden;
+    justify-content: right;
+    display: flex;
+    align-items: center;
+    
+    img {
+      height: 80%;
+      max-width: 90%;
+    }
+  }
+
+  .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+    h2 {
+      font-style: 30px;
+    }
+
+    form {
+      width: 70%;
+      height: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+
+      input {
+        width: 300px;
+        height: 30px;
+        font-style: 14px;
+
+        @include mobile {
+          width: 200px;
+          height: 20px;
+        }
+      }
+
+      textarea {
+        width: 300px;
+        height: 200px;
+        font-size: 14px;
+        @include mobile {
+          width: 200px;
+          height: 100px;
+        }
+      }
+
+      button {
+        width: 150px;
+        height: 30px;
+        color: white;
+        background-color: $maincolor;
+        border: none;
+        border-radius: 10px;
+        font-weight: 500;
+        cursor: pointer;
+      }
+
+      span {
+        color: green;
+      }
+    }
+  }
 }
