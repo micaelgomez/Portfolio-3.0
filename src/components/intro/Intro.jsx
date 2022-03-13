@@ -33,7 +33,7 @@ export default function Intro() {
                   <h1>Micael Alessandro Gomez</h1>
                   <h3>Full stack <span ref={textRef}></span> </h3>
               </div>
-              <a href='#portfolio'>
+              <a href='#about'>
                   <img src='assets/icons8-double-down-100.png' alt=''></img>
               </a>
         </div>

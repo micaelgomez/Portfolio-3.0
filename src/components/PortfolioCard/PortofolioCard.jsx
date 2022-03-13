@@ -2,7 +2,7 @@ import React from 'react'
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import './PortfolioCard.scss'
-import {featured} from '../../data'
+
 
 export default function PortofolioCard({id,title,img,page,code}) {
   return (

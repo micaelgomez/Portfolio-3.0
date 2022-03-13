@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import pdf from ".//CV-Us-MicaelGomez.pdf";
+import pdf from ".//CV-Es-MicaelGomez.pdf";
 
 export default function About() {
   return (
@@ -25,9 +25,8 @@ export default function About() {
           <p>Full Stack web Developer with JavaScript and Node.js</p>
           <p>Graduated from <a href="https://www.soyhenry.com" target="_blank" rel="noreferrer" id='henry'> Henry Bootcamp</a> (+800 hours). </p>
           <p>
-            I like and am excited to learn new technologies, undertake
-            activities, work as a team, achieve proposed goals and maintain an
-            excellent work environment.
+            I like and i'm excited to learn new technologies, undertake
+            activities, work as a team and achieve proposed goals.
           </p>
           <div className="stack">
           <img src="https://img.icons8.com/color/50/000000/html-5--v1.png" alt="im" /> 

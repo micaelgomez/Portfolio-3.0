@@ -25,7 +25,6 @@ function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
     setMessage(true);
-    setData(input);
 
     emailjs
       .sendForm(
@@ -42,6 +41,7 @@ function Contact() {
           console.log(error.text);
         }
       );
+    setData(input);
   };
 
   return (
