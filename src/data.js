@@ -15,10 +15,10 @@ export const featured = [
   },
   {
     id: 3,
-    title: "Social life",
-    img: "assets/life.png",
-    page: "https://living-the-social-life.vercel.app/",
-    code: "https://github.com/micaelgomez/Living-The-social-life",
+    title: "Weather channel",
+    img: "assets/weather.png",
+    page: "https://clima-web.vercel.app//",
+    code: "https://github.com/micaelgomez/Clima-web.git",
   },
   {
     id: 4,
@@ -36,6 +36,13 @@ export const reactPortfolio = [
     img: "assets/rocket.png",
     page: "https://rocketprojectarg.netlify.app/",
     code: "https://github.com/sebastiananea/RocketFrontend",
+  },
+  {
+    id: 2,
+    title: "Weather channel",
+    img: "assets/weather.png",
+    page: "https://clima-web.vercel.app//",
+    code: "https://github.com/micaelgomez/Clima-web.git",
   },
   {
     id: 2,
