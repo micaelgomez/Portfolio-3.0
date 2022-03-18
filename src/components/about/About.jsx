@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import pdf from ".//CV-Es-MicaelGomez.pdf";
+import pdf from ".//CV_MicaelGomez.pdf";
 
 export default function About() {
   return (
