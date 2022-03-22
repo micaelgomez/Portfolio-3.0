@@ -1,10 +1,18 @@
 # PORTFOLIO MICAEL ALESSANDRO GOMEZ
 
-This portfolio is made with the purpose of showing my skills, my projects, to allow people to contact me and obviously because I love to develop in front end !
+## Purpose
 
-<p align="right">
-  <img height="200" src="assets/port.png" />
+**This portfolio is made with the purpose of showing my skills, my projects, to allow people to contact me and obviously because I love to develop in front end !**
+
+<p align="left" >
+  <img height="300" src="./public/assets/port.png" />
 </p>
+
+## Built with
+
+- Javascript.
+- React.js.
+- SASS.
 
 ## Available Scripts
 
