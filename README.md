@@ -1,19 +1,11 @@
-# Getting Started with Create React App
+# PORTFOLIO MICAEL ALESSANDRO GOMEZ
+This portfolio is made with the purpose of showing my skills, my projects, to allow people to contact me and obviously because I love to develop in front end !
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
-In the project directory, you can run:
-
-### `npm start`
-
+ **npm i** to install 
+ **npm start** to lunch on your localhost 
+ 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-<p align="right">
-  <img height="200" src="./cooking.png" />
-</p>
