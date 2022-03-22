@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# PORTFOLIO MICAEL ALESSANDRO GOMEZ
+This portfolio is made with the purpose of showing my skills, my projects, to allow people to contact me and obviously because I love to develop in front end !
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
