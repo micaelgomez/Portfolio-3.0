@@ -3,7 +3,9 @@ import "./portfolio.scss";
 import PortfolioList from "../PortfolioList/portfolioList";
 import { useState, useEffect } from "react";
 import PortofolioCard from "../PortfolioCard/PortofolioCard";
+import PortfolioCard2 from "../PortfolioCard2/PortfolioCard2";
 import { featured, reactPortfolio, reactRedux, responsive } from "../../data";
+
 
 export default function Portfolio() {
   const [selected, setSelected] = useState("featured");
@@ -60,14 +62,16 @@ export default function Portfolio() {
           />
         ))}
       </ul>
+
       <div className="container">
         {data.map((d) => (
-          <PortofolioCard
+          <PortfolioCard2
             id={d.id}
             title={d.title}
             img={d.img}
             page={d.page}
             code={d.code}
+            stack={d.stack}
           />
         ))}
       </div>

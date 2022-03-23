@@ -1,6 +1,7 @@
 import "./contact.scss";
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import Roll from 'react-reveal/Roll';
 
 function Contact() {
   const input = {
@@ -46,6 +47,7 @@ function Contact() {
 
   return (
     <div className="contact" id="contact">
+      <Roll>
       <div className="left">
         <img src="assets/pagina.jpg" alt="contact" />
       </div>
@@ -82,6 +84,7 @@ function Contact() {
           {message && <span>Thanks, I''ll reply ASAP :)</span>}
         </form>
       </div>
+      </Roll>
     </div>
   );
 }

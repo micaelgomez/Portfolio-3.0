@@ -1,0 +1,101 @@
+@import "../../global.scss";
+
+.portfolio-card {
+  
+  display: flex;
+  width: 80%;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 5em;
+  align-items: center;
+  transition: all 1s ease ;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .portfolio-card-left {
+    width: 60%;
+    padding: 1em;
+
+    @include mobile {
+      margin: 0;
+      width: 95%;  
+    }
+
+    h3 {
+      font-size: 2.5rem;
+      margin-bottom: 1em;
+
+      @include mobile {
+        font-size: 1.3rem;
+        text-align: center;    
+      }
+    }
+
+    p {
+      color: #3a3a3c;
+      line-height: 1.5;
+      margin-bottom: 1em;
+      
+    }
+    
+    
+    .portfolio-card-left-stack {
+      width: 85%;
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 1em;
+
+      li {
+        list-style: none;
+        background-color: black;
+        color: #fff;
+        padding: 0.25em 1em;
+        margin: 5px 0;
+        margin-right: 8px;
+        border-radius: 10px;
+      }
+    }
+
+    .portfolio-card-left-links {
+      
+      .btn-code,
+      .btn-link {
+        color: #3a3a3c;
+      }
+      .btn-code {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .card-right {
+    padding: 0;
+    margin: 0;
+    align-items: center;
+
+    @include mobile {
+      order: -2;
+     width: 100%;
+    }
+
+    .image-full {
+      width: 400px;
+      height: 410px;
+      object-fit: cover;
+      object-position: center;
+        
+
+      @include mobile {
+        width: 100%;
+        // object-fit: cover;
+        // object-position: none;
+      }
+    }
+  }
+
+  
+}

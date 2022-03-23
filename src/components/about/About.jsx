@@ -1,15 +1,19 @@
 import React from "react";
 import "./about.css";
 import pdf from ".//CV_MicaelGomez.pdf";
+import Zoom from 'react-reveal/Zoom';
 
 export default function About() {
   return (
     <div class="about " id="about">
+      
       <div class="about-right">
+        <Zoom>
         <h1>
           Hello<span>!</span>
         </h1>
         <h2>Here's who I am & what I do</h2>
+        </Zoom>
         <div class="about-btns">
           <a class="btn btn-white" href={pdf} download>
             {" "}
@@ -20,7 +24,8 @@ export default function About() {
             Github
           </a>
         </div>
-
+        
+        <Zoom>
         <div class="about-para">
           <p>Full Stack web Developer with JavaScript and Node.js</p>
           <p>Graduated from <a href="https://www.soyhenry.com" target="_blank" rel="noreferrer" id='henry'> Henry Bootcamp</a> (+800 hours). </p>
@@ -39,7 +44,9 @@ export default function About() {
             <img src="https://img.icons8.com/color/48/000000/mongodb.png" alt="im" />
           </div>
         </div>
+        </Zoom>
       </div>
+      
     </div>
   );
 }
