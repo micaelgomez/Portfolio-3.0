@@ -4,8 +4,8 @@ import PortfolioList from "../PortfolioList/portfolioList";
 import { useState, useEffect } from "react";
 import PortofolioCard from "../PortfolioCard/PortofolioCard";
 import PortfolioCard2 from "../PortfolioCard2/PortfolioCard2";
-import { featured, reactPortfolio, reactRedux, responsive } from "../../data";
-
+import { featured, worldClass, semiPro, amateur } from "../../data";
+import StarsIcon from '@mui/icons-material/Stars';
 
 export default function Portfolio() {
   const [selected, setSelected] = useState("featured");
@@ -14,19 +14,19 @@ export default function Portfolio() {
   const list = [
     {
       id: "featured",
-      title: "Featured",
+      title: "Featured"
     },
     {
-      id: "react",
-      title: "React",
+      id: "World Class",
+      title: "World Class",
     },
     {
-      id: "react-redux-node",
-      title: "React/Redux & Node.js",
+      id: "Semi-Pro",
+      title: "Semi-Pro",
     },
     {
-      id: "responsive",
-      title: " Css Resposive",
+      id: "Amateur",
+      title: " Amateur",
     },
   ];
 
@@ -35,14 +35,14 @@ export default function Portfolio() {
       case "featured":
         setData(featured);
         break;
-      case "react":
-        setData(reactPortfolio);
+      case "World Class":
+        setData(worldClass);
         break;
-      case "react-redux-node":
-        setData(reactRedux);
+      case "Semi-Pro":
+        setData(semiPro);
         break;
-      case "responsive":
-        setData(responsive);
+      case "Amateur":
+        setData(amateur);
         break;
       default:
         setData(featured);
@@ -72,6 +72,7 @@ export default function Portfolio() {
             page={d.page}
             code={d.code}
             stack={d.stack}
+            intro={d.intro}
           />
         ))}
       </div>

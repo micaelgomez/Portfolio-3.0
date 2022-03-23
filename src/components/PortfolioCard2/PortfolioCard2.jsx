@@ -4,14 +4,14 @@ import IosShareIcon from "@mui/icons-material/IosShare";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import Fade from "react-reveal/Fade";
 
-function PortfolioCard2({ id, title, img, page, code, stack }) {
+function PortfolioCard2({ id, title, img, page, code, stack,intro }) {
   return (
     <Fade left>
     <div id={id} className="portfolio-card">
       <div className="portfolio-card-left">
         <h3>{title}</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere minima    
+          {intro} 
         </p>
         <div className="portfolio-card-left-stack">
           {stack.map((s) => {
